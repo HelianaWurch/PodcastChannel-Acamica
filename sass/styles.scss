@@ -6,22 +6,82 @@
 
 /* MEDIAS */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
 	h1 {
-		font-size: $font-size-stfr;
-	}
-
-	h2 {
 		font-size: $font-size-ftet;
+		width: 100%;
 	}
 
 	p {
 		font-size: $font-size-sxtn;
 	}
 
+	.btn {
+		width: unset;
+		padding: 1rem 4rem;
+	}
+
+	.section-white {
+		padding: 4rem 3rem 0rem 3rem;
+	}
+
+	#topicos,
+	#introduccion {
+		padding: 2rem 3rem;
+	}
+
+	.topic-container {
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+
+	.topic {
+		width: 220px;
+	}
+
+	#entrevistas h2 {
+		padding: 0rem 3rem;
+	}
+
+	#nosotros {
+		padding: 2rem 3rem;
+		flex-direction: row;
+
+		#phone {
+			top: -2rem;
+
+			img {
+				max-width: 350px;
+			}
+		}
+
+		.nosotros-text {
+			max-width: 600px;
+		}
+	}
+}
+
+@media screen and (min-width: 1220px) {
+	h1 {
+		font-size: $font-size-stfr;
+		width: 100%;
+	}
+
+	h2 {
+		font-size: $font-size-ftet;
+	}
+
+	.blue-dot {
+		color: $blue;
+	}
+
+	.button {
+		font-size: $font-size-ettn;
+	}
+
 	/* NAV */
 	header {
-		padding: 26px 100px;
+		padding: 1.63rem 6.25rem;
 
 		nav {
 			align-items: center;
@@ -46,11 +106,14 @@
 							padding: unset;
 							line-height: unset;
 							color: $black;
+							&:hover {
+								text-decoration: line-through;
+								color: $teal;
+							}
+							&:active {
+								color: rgba(6, 10, 36, 0.56);
+							}
 						}
-
-						// li:hover {
-
-						// }
 					}
 				}
 
@@ -76,12 +139,14 @@
 
 		.gradient-container-one {
 			height: unset;
-			padding: 5rem 0;
+			padding: 8rem 0;
 			clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
 		}
 	}
 
+	#topicos,
 	#introduccion {
+		padding: 2rem 12rem;
 		#p-sm {
 			display: none;
 		}
@@ -93,16 +158,11 @@
 		}
 	}
 
+	.section-white {
+		padding: 1rem 12rem;
+	}
+
 	/* GENERALES */
-
-	.button {
-		font-size: $font-size-ettn;
-	}
-
-	.btn {
-		width: unset;
-		padding: 1rem 4rem;
-	}
 
 	.margin-x {
 		margin: 0 12rem;
@@ -119,15 +179,6 @@
 		max-width: 40%;
 	}
 
-	.topic-container {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.topic {
-		width: 220px;
-	}
-
 	.container {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -139,7 +190,6 @@
 	}
 
 	#nosotros {
-		// justify-content: flex-start;
 		flex-direction: row;
 
 		#phone {

@@ -14,8 +14,9 @@ h2 {
 	@extend %titular-dos;
 }
 
-.h2-white {
-	padding-top: 4rem;
+.section-white {
+	margin: 0 1rem;
+	padding-top: 3rem;
 	color: $white;
 }
 
@@ -36,6 +37,7 @@ p {
 }
 
 .topic-container {
+	display: flex;
 	flex-direction: column;
 	margin: 5rem 0rem;
 }
@@ -46,6 +48,7 @@ p {
 
 .spotify-container {
 	padding: 1rem;
+	display: flex;
 	flex-direction: column;
 }
 
@@ -54,6 +57,19 @@ iframe {
 	height: 232px;
 	border: none;
 	margin: 0.5rem 0;
+	cursor: pointer;
+	-webkit-transition: 0.45s;
+	transition: 0.45s;
+	&:hover {
+		-moz-transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+		-webkit-box-shadow: 1px 4px 19px -5px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 1px 4px 19px -5px rgba(0, 0, 0, 0.75);
+		box-shadow: 1px 4px 19px -5px rgba(0, 0, 0, 0.75);
+	}
 }
 
 .container {
@@ -70,20 +86,17 @@ iframe {
 	display: block;
 }
 
-.flex {
-	display: flex;
-}
-
-.margin-x {
-	margin: 0 1rem;
-}
+// .flex {
+// 	display: flex;
+// }
 
 .line-through {
 	text-decoration: line-through;
 }
 
-.blue-dot {
-	color: $blue;
+#introduccion,
+#topicos {
+	margin: 0 1rem;
 }
 
 #novedades {
@@ -95,6 +108,8 @@ iframe {
 }
 
 #nosotros {
+	margin: 0 1rem;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 
