@@ -1,0 +1,79 @@
+/*Colors*/
+$black: #060a24;
+$white: #ffffff;
+$darkblue: #0000a3;
+$teal: #00f3bb;
+
+$font-family-mono: "IBM Plex Mono", monospace;
+$font-family-sans: "IBM Plex Sans", sans-serif;
+
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap");
+
+$font-size-frtn: 0.875rem;
+$font-size-sxtn: 1rem;
+$font-size-ettn: 1.125rem;
+$font-size-twfr: 1.5rem;
+$font-size-ttsx: 2.25rem;
+$font-size-ftet: 3rem;
+$font-size-stfr: 4rem;
+
+$blue: #0000ff;
+
+%titular-principal {
+	font-family: $font-family-sans;
+	font-weight: 400;
+	font-size: $font-size-ttsx;
+	letter-spacing: 0;
+	line-height: 2.625rem;
+	margin-bottom: 0;
+}
+
+%titular-dos {
+	font-family: $font-family-sans;
+	font-size: $font-size-ttsx;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 2.625rem;
+	margin-top: 3rem;
+}
+
+%titular-tres {
+	font-family: $font-family-sans;
+	font-size: $font-size-twfr;
+	font-weight: 600;
+	letter-spacing: 0;
+}
+
+%parrafos {
+	font-family: $font-family-mono;
+	font-size: $font-size-frtn;
+	line-height: 1.375rem;
+	letter-spacing: 0;
+}
+
+/* PADDINGS Y MARGINS */
+$padding-cero: 0% 0%;
+
+/* BUTTONS */
+%button {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: 1rem 0rem;
+	border: none;
+	font-family: $font-family-mono;
+	font-size: $font-size-sxtn;
+	font-weight: 500;
+	line-height: 1.375rem;
+	color: $black;
+	background-color: $teal;
+	-webkit-transition: 0.45s;
+	transition: 0.45s;
+	&:hover {
+		color: $white;
+		background-image: linear-gradient(70deg, $teal, $blue);
+	}
+}

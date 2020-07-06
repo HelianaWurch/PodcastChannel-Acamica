@@ -1,0 +1,26 @@
+footer {
+	flex-direction: column;
+	align-items: center;
+	background-color: $white;
+	margin: 1.5rem 0;
+	text-align: center;
+
+	.social {
+		display: flex;
+		justify-content: center;
+	}
+
+	.social a {
+		font-size: 1.125rem;
+		margin-left: 1.25rem;
+		padding: 0.5rem;
+	}
+
+	.social a:first-child {
+		margin-left: 0;
+		padding-left: 0;
+	}
+	.social a:last-child {
+		padding-right: 0;
+	}
+}

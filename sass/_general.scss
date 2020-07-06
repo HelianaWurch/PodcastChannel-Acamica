@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	padding: $padding-cero;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+h1 {
+	@extend %titular-principal;
+}
+
+h2 {
+	@extend %titular-dos;
+}
+
+.h2-white {
+	padding-top: 4rem;
+	color: $white;
+}
+
+h3 {
+	@extend %titular-tres;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	@extend %parrafos;
+}
+
+.button {
+	@extend %button;
+}
+
+.topic-container {
+	flex-direction: column;
+	margin: 5rem 0rem;
+}
+
+.topic {
+	text-align: center;
+}
+
+.spotify-container {
+	padding: 1rem;
+	flex-direction: column;
+}
+
+iframe {
+	width: 100%;
+	height: 232px;
+	border: none;
+	margin: 0.5rem 0;
+}
+
+.container {
+	display: flex;
+	flex-flow: column wrap;
+
+	img {
+		width: 100%;
+	}
+}
+
+.box img {
+	width: 20rem;
+	display: block;
+}
+
+.flex {
+	display: flex;
+}
+
+.margin-x {
+	margin: 0 1rem;
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+.blue-dot {
+	color: $blue;
+}
+
+#novedades {
+	text-align: center;
+}
+
+#entrevistas h2 {
+	padding: 0rem 1rem;
+}
+
+#nosotros {
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	#phone {
+		position: relative;
+		top: -7rem;
+		left: -2.5rem;
+
+		margin: 0rem 2rem -7rem 2rem;
+
+		img {
+			max-width: 300px;
+		}
+	}
+}
+
+#p-lg {
+	display: none;
+}

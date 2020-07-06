@@ -1,0 +1,162 @@
+@import "variables";
+@import "general";
+@import "nav";
+@import "main";
+@import "footer";
+
+/* MEDIAS */
+
+@media screen and (min-width: 1000px) {
+	h1 {
+		font-size: $font-size-stfr;
+	}
+
+	h2 {
+		font-size: $font-size-ftet;
+	}
+
+	p {
+		font-size: $font-size-sxtn;
+	}
+
+	/* NAV */
+	header {
+		padding: 26px 100px;
+
+		nav {
+			align-items: center;
+
+			.nav-box-two {
+				padding-top: 0px;
+
+				ul {
+					position: relative;
+					top: 0;
+					right: 0;
+					width: unset;
+					overflow: hidden;
+					background: unset;
+					height: unset;
+
+					li {
+						padding-left: 50px;
+						display: inline-block;
+
+						a {
+							padding: unset;
+							line-height: unset;
+							color: $black;
+						}
+
+						// li:hover {
+
+						// }
+					}
+				}
+
+				input {
+					display: none;
+				}
+
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+
+	/* MAIN */
+
+	main {
+		.gradient-container-two {
+			height: unset;
+			padding: 8rem 0;
+			clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+		}
+
+		.gradient-container-one {
+			height: unset;
+			padding: 5rem 0;
+			clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+		}
+	}
+
+	#introduccion {
+		#p-sm {
+			display: none;
+		}
+
+		#p-lg {
+			display: block;
+			max-width: 58%;
+			margin-bottom: 3rem;
+		}
+	}
+
+	/* GENERALES */
+
+	.button {
+		font-size: $font-size-ettn;
+	}
+
+	.btn {
+		width: unset;
+		padding: 1rem 4rem;
+	}
+
+	.margin-x {
+		margin: 0 12rem;
+	}
+
+	.spotify-container {
+		padding-bottom: 4rem;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	iframe {
+		margin: 2rem 2.4rem;
+		max-width: 40%;
+	}
+
+	.topic-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.topic {
+		width: 220px;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 0;
+	}
+
+	#entrevistas h2 {
+		padding: 0rem 12rem;
+	}
+
+	#nosotros {
+		// justify-content: flex-start;
+		flex-direction: row;
+
+		#phone {
+			top: -10rem;
+
+			img {
+				max-width: 400px;
+			}
+		}
+		.nosotros-text {
+			max-width: 400px;
+		}
+	}
+
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 10rem;
+	}
+}
