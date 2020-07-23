@@ -12,6 +12,10 @@
 		width: 100%;
 	}
 
+	h2 {
+		margin: 1rem 3rem;
+	}
+
 	p {
 		font-size: $font-size-sxtn;
 	}
@@ -21,43 +25,41 @@
 		padding: 1rem 4rem;
 	}
 
-	.section-white {
-		padding: 4rem 3rem 0rem 3rem;
-	}
-
-	#topicos,
-	#introduccion {
-		padding: 2rem 3rem;
-	}
-
-	.topic-container {
+	.container {
 		flex-flow: row wrap;
-		justify-content: space-between;
+		justify-content: space-around;
+		padding: 4rem;
 	}
 
-	.topic {
-		width: 220px;
+	.section-white {
+		margin: 0 3rem;
+		padding-top: 3rem;
 	}
 
-	#entrevistas h2 {
-		padding: 0rem 3rem;
+	.entrevistas-container {
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 4rem;
 	}
 
 	#nosotros {
-		padding: 2rem 3rem;
 		flex-direction: row;
 
 		#phone {
-			top: -2rem;
+			top: -8rem;
+			margin-bottom: -10rem;
 
 			img {
-				max-width: 350px;
+				max-width: 330px;
 			}
 		}
 
 		.nosotros-text {
-			max-width: 600px;
+			max-width: 300px;
 		}
+	}
+
+	#introduccion {
+		margin: 0rem 3rem;
 	}
 }
 
@@ -69,6 +71,7 @@
 
 	h2 {
 		font-size: $font-size-ftet;
+		margin: 1rem 10rem;
 	}
 
 	.blue-dot {
@@ -77,6 +80,25 @@
 
 	.button {
 		font-size: $font-size-ettn;
+	}
+
+	.section-white {
+		margin: 0 10rem;
+	}
+
+	.container {
+		flex-flow: row wrap;
+		justify-content: space-around;
+		padding: 1rem;
+		margin-bottom: 4rem;
+	}
+
+	.topic:first-child {
+		margin-left: 10rem;
+	}
+
+	.topic:last-child {
+		margin-right: 10rem;
 	}
 
 	/* NAV */
@@ -128,80 +150,57 @@
 		}
 	}
 
-	/* MAIN */
-
-	main {
-		.gradient-container-two {
-			height: unset;
-			padding: 8rem 0;
-			clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-		}
-
-		.gradient-container-one {
-			height: unset;
-			padding: 8rem 0;
-			clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
-		}
+	.gradient-container-one {
+		height: unset;
+		padding: 8rem 0;
+		clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 	}
 
-	#topicos,
-	#introduccion {
-		padding: 2rem 12rem;
-		#p-sm {
-			display: none;
-		}
-
-		#p-lg {
-			display: block;
-			max-width: 58%;
-			margin-bottom: 3rem;
-		}
+	.gradient-container-two {
+		height: unset;
+		padding: 8rem 0;
+		clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
 	}
 
-	.section-white {
-		padding: 1rem 12rem;
+	#p-sm {
+		display: none;
+	}
+
+	#p-lg {
+		display: block;
+		max-width: 60%;
 	}
 
 	/* GENERALES */
-
-	.margin-x {
-		margin: 0 12rem;
-	}
-
-	.spotify-container {
-		padding-bottom: 4rem;
-		flex-flow: row wrap;
-		justify-content: center;
-	}
 
 	iframe {
 		margin: 2rem 2.4rem;
 		max-width: 40%;
 	}
 
-	.container {
-		display: grid;
+	.entrevistas-container {
 		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 0;
-	}
-
-	#entrevistas h2 {
-		padding: 0rem 12rem;
 	}
 
 	#nosotros {
 		flex-direction: row;
+		padding: 0rem 10rem;
 
 		#phone {
-			top: -10rem;
+			top: -8rem;
 
 			img {
-				max-width: 400px;
+				max-width: 458px;
 			}
 		}
 		.nosotros-text {
 			max-width: 400px;
 		}
+	}
+
+	#introduccion {
+		margin: 2rem 12rem;
+		padding-top: 3rem;
 	}
 
 	footer {

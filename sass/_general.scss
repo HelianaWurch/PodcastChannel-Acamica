@@ -2,8 +2,6 @@ body {
 	margin: 0;
 	padding: $padding-cero;
 	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 }
 
 h1 {
@@ -14,14 +12,18 @@ h2 {
 	@extend %titular-dos;
 }
 
-.section-white {
-	margin: 0 1rem;
-	padding-top: 3rem;
-	color: $white;
+.nosotros-text h2 {
+	margin: 1rem 0rem;
 }
 
 h3 {
 	@extend %titular-tres;
+}
+
+.section-white {
+	margin: 0 1rem;
+	padding-top: 3rem;
+	color: $white;
 }
 
 a {
@@ -36,94 +38,72 @@ p {
 	@extend %button;
 }
 
-.topic-container {
+.container {
 	display: flex;
 	flex-direction: column;
-	margin: 5rem 0rem;
+	justify-content: center;
+	padding: 0rem 1rem;
 }
 
 .topic {
+	width: 200px;
 	text-align: center;
-}
-
-.spotify-container {
 	padding: 1rem;
-	display: flex;
-	flex-direction: column;
+	margin: 0rem auto;
 }
 
 iframe {
 	width: 100%;
-	height: 232px;
+	height: 14.5rem;
 	border: none;
 	margin: 0.5rem 0;
-	cursor: pointer;
-	-webkit-transition: 0.45s;
 	transition: 0.45s;
+	-webkit-transition: 0.45s;
+	-moz-transition: 0.45s;
+	-ms-transition: 0.45s;
+	-o-transition: 0.45s;
 	&:hover {
 		-moz-transform: scale(1.05);
 		-webkit-transform: scale(1.05);
 		-o-transform: scale(1.05);
 		-ms-transform: scale(1.05);
 		transform: scale(1.05);
-		-webkit-box-shadow: 1px 4px 19px -5px rgba(0, 0, 0, 0.75);
-		-moz-box-shadow: 1px 4px 19px -5px rgba(0, 0, 0, 0.75);
 		box-shadow: 1px 4px 19px -5px rgba(0, 0, 0, 0.75);
 	}
 }
 
-.container {
-	display: flex;
-	flex-flow: column wrap;
+.entrevistas-container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 0;
 
 	img {
 		width: 100%;
 	}
 }
 
-.box img {
-	width: 20rem;
-	display: block;
-}
-
-// .flex {
-// 	display: flex;
-// }
-
 .line-through {
 	text-decoration: line-through;
-}
-
-#introduccion,
-#topicos {
-	margin: 0 1rem;
 }
 
 #novedades {
 	text-align: center;
 }
 
-#entrevistas h2 {
-	padding: 0rem 1rem;
-}
-
 #nosotros {
-	margin: 0 1rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-
 	#phone {
 		position: relative;
 		top: -7rem;
-		left: -2.5rem;
-
-		margin: 0rem 2rem -7rem 2rem;
+		margin-bottom: -6rem;
 
 		img {
 			max-width: 300px;
 		}
 	}
+}
+
+#introduccion {
+	margin: 0rem 1rem;
 }
 
 #p-lg {

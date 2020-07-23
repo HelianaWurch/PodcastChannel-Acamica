@@ -13,7 +13,7 @@ header {
 			background: $blue;
 			width: 100%;
 			position: absolute;
-			top: 3.1rem;
+			top: 3.5rem;
 			right: 0;
 			overflow: hidden;
 			list-style: none;
@@ -67,7 +67,7 @@ header {
 				right: 5px;
 				height: 32px;
 				width: 40px;
-				opacity: 100;
+				opacity: 0;
 				z-index: 2;
 				position: absolute;
 			}

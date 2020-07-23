@@ -17,7 +17,7 @@ h2 {
   font-weight: 400;
   letter-spacing: 0;
   line-height: 2.625rem;
-  margin-top: 3rem; }
+  margin: 1rem; }
 
 h3 {
   font-family: "IBM Plex Sans", sans-serif;
@@ -38,7 +38,7 @@ p {
   cursor: pointer;
   text-align: center;
   width: 100%;
-  margin-bottom: 1rem;
+  margin: 2rem 0rem;
   padding: 1rem 0rem;
   border: none;
   font-family: "IBM Plex Mono", monospace;
@@ -56,9 +56,10 @@ p {
 body {
   margin: 0;
   padding: 0% 0%;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  box-sizing: border-box; }
+
+.nosotros-text h2 {
+  margin: 1rem 0rem; }
 
 .section-white {
   margin: 0 1rem;
@@ -68,72 +69,58 @@ body {
 a {
   text-decoration: none; }
 
-.topic-container {
+.container {
   display: flex;
   flex-direction: column;
-  margin: 5rem 0rem; }
+  justify-content: center;
+  padding: 0rem 1rem; }
 
 .topic {
-  text-align: center; }
-
-.spotify-container {
+  width: 200px;
+  text-align: center;
   padding: 1rem;
-  display: flex;
-  flex-direction: column; }
+  margin: 0rem auto; }
 
 iframe {
   width: 100%;
-  height: 232px;
+  height: 14.5rem;
   border: none;
   margin: 0.5rem 0;
-  cursor: pointer;
+  transition: 0.45s;
   -webkit-transition: 0.45s;
-  transition: 0.45s; }
+  -moz-transition: 0.45s;
+  -ms-transition: 0.45s;
+  -o-transition: 0.45s; }
   iframe:hover {
     -moz-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -o-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
-    -webkit-box-shadow: 1px 4px 19px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 4px 19px -5px rgba(0, 0, 0, 0.75);
     box-shadow: 1px 4px 19px -5px rgba(0, 0, 0, 0.75); }
 
-.container {
-  display: flex;
-  flex-flow: column wrap; }
-  .container img {
+.entrevistas-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0; }
+  .entrevistas-container img {
     width: 100%; }
-
-.box img {
-  width: 20rem;
-  display: block; }
 
 .line-through {
   text-decoration: line-through; }
 
-#introduccion,
-#topicos {
-  margin: 0 1rem; }
-
 #novedades {
   text-align: center; }
 
-#entrevistas h2 {
-  padding: 0rem 1rem; }
+#nosotros #phone {
+  position: relative;
+  top: -7rem;
+  margin-bottom: -6rem; }
+  #nosotros #phone img {
+    max-width: 300px; }
 
-#nosotros {
-  margin: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; }
-  #nosotros #phone {
-    position: relative;
-    top: -7rem;
-    left: -2.5rem;
-    margin: 0rem 2rem -7rem 2rem; }
-    #nosotros #phone img {
-      max-width: 300px; }
+#introduccion {
+  margin: 0rem 1rem; }
 
 #p-lg {
   display: none; }
@@ -152,7 +139,7 @@ header {
       background: #0000ff;
       width: 100%;
       position: absolute;
-      top: 3.1rem;
+      top: 3.5rem;
       right: 0;
       overflow: hidden;
       list-style: none;
@@ -191,7 +178,7 @@ header {
         right: 5px;
         height: 32px;
         width: 40px;
-        opacity: 100;
+        opacity: 0;
         z-index: 2;
         position: absolute; }
       header nav .nav-box-two span {
@@ -215,16 +202,16 @@ header {
     header nav input:checked ~ span:nth-last-child(2) {
       transform: rotate(-45deg) translate(1px, 0px); }
 
-main {
-  /*CONTENEDORES DE GRADIENTE */ }
-  main .gradient-container-two {
-    height: 80rem;
-    background-image: linear-gradient(to bottom, #0000ff, #0000a3);
-    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%); }
-  main .gradient-container-one {
-    height: 21.31rem;
-    background-image: linear-gradient(to bottom, #0000ff, #0000a3);
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); }
+/*CONTENEDORES DE GRADIENTE */
+.gradient-container-one {
+  height: 80rem;
+  background-image: linear-gradient(to bottom, #0000ff, #0000a3);
+  clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%); }
+
+.gradient-container-two {
+  height: 21.31rem;
+  background-image: linear-gradient(to bottom, #0000ff, #0000a3);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); }
 
 footer {
   display: flex;
@@ -262,6 +249,9 @@ footer {
     font-size: 3rem;
     width: 100%; }
 
+  h2 {
+    margin: 1rem 3rem; }
+
   p {
     font-size: 1rem; }
 
@@ -269,45 +259,60 @@ footer {
     width: unset;
     padding: 1rem 4rem; }
 
-  .section-white {
-    padding: 4rem 3rem 0rem 3rem; }
-
-  #topicos,
-  #introduccion {
-    padding: 2rem 3rem; }
-
-  .topic-container {
+  .container {
     flex-flow: row wrap;
-    justify-content: space-between; }
+    justify-content: space-around;
+    padding: 4rem; }
 
-  .topic {
-    width: 220px; }
+  .section-white {
+    margin: 0 3rem;
+    padding-top: 3rem; }
 
-  #entrevistas h2 {
-    padding: 0rem 3rem; }
+  .entrevistas-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 4rem; }
 
   #nosotros {
-    padding: 2rem 3rem;
     flex-direction: row; }
     #nosotros #phone {
-      top: -2rem; }
+      top: -8rem;
+      margin-bottom: -10rem; }
       #nosotros #phone img {
-        max-width: 350px; }
+        max-width: 330px; }
     #nosotros .nosotros-text {
-      max-width: 600px; } }
+      max-width: 300px; }
+
+  #introduccion {
+    margin: 0rem 3rem; } }
 @media screen and (min-width: 1220px) {
   h1 {
     font-size: 4rem;
     width: 100%; }
 
   h2 {
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin: 1rem 10rem; }
 
   .blue-dot {
     color: #0000ff; }
 
   .button {
     font-size: 1.125rem; }
+
+  .section-white {
+    margin: 0 10rem; }
+
+  .container {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    margin-bottom: 4rem; }
+
+  .topic:first-child {
+    margin-left: 10rem; }
+
+  .topic:last-child {
+    margin-right: 10rem; }
 
   /* NAV */
   header {
@@ -341,60 +346,44 @@ footer {
         header nav .nav-box-two span {
           display: none; }
 
-  /* MAIN */
-  main .gradient-container-two {
+  .gradient-container-one {
     height: unset;
     padding: 8rem 0;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); }
-  main .gradient-container-one {
+
+  .gradient-container-two {
     height: unset;
     padding: 8rem 0;
     clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%); }
 
-  #topicos,
-  #introduccion {
-    padding: 2rem 12rem; }
-    #topicos #p-sm,
-    #introduccion #p-sm {
-      display: none; }
-    #topicos #p-lg,
-    #introduccion #p-lg {
-      display: block;
-      max-width: 58%;
-      margin-bottom: 3rem; }
+  #p-sm {
+    display: none; }
 
-  .section-white {
-    padding: 1rem 12rem; }
+  #p-lg {
+    display: block;
+    max-width: 60%; }
 
   /* GENERALES */
-  .margin-x {
-    margin: 0 12rem; }
-
-  .spotify-container {
-    padding-bottom: 4rem;
-    flex-flow: row wrap;
-    justify-content: center; }
-
   iframe {
     margin: 2rem 2.4rem;
     max-width: 40%; }
 
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0; }
-
-  #entrevistas h2 {
-    padding: 0rem 12rem; }
+  .entrevistas-container {
+    grid-template-columns: repeat(3, 1fr); }
 
   #nosotros {
-    flex-direction: row; }
+    flex-direction: row;
+    padding: 0rem 10rem; }
     #nosotros #phone {
-      top: -10rem; }
+      top: -8rem; }
       #nosotros #phone img {
-        max-width: 400px; }
+        max-width: 458px; }
     #nosotros .nosotros-text {
       max-width: 400px; }
+
+  #introduccion {
+    margin: 2rem 12rem;
+    padding-top: 3rem; }
 
   footer {
     flex-direction: row;
